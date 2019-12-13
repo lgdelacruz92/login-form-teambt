@@ -40,7 +40,8 @@ const Login = props => {
 
 Login.propTypes = {
   onLogin: PropTypes.func.isRequired,
-  onSignUp: PropTypes.func.isRequired
+  onSignUp: PropTypes.func.isRequired,
+  onRememberMe: PropTypes.func.isRequired
 };
 
 export default Login;

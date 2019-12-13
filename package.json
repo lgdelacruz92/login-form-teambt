@@ -40,5 +40,18 @@
     "@storybook/addon-links": "^5.2.8",
     "@storybook/addons": "^5.2.8",
     "@storybook/react": "^5.2.8"
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@1.0.5"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "@material-ui/core": "^4.7.2",
+    "@material-ui/icons": "^4.5.1"
   }
 }

@@ -3,5 +3,5 @@ import MaskedTextField from "components/team-bt-components/MaskedTextField/Maske
 
 export default { title: "MaskedTextField" };
 export const maskedTextField = () => (
-  <MaskedTextField label="Masked Text Field" />
+  <MaskedTextField label="Masked Text Field" errorText="" />
 );

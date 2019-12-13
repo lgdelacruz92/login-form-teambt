@@ -1,6 +1,5 @@
 import React from "react";
 import LoginContainer from "./LoginContainer";
-import RememberMe from "../team-bt-components/RememberMe";
 import TeamBtButton from "../team-bt-components/TeamBtButton";
 import LoginEmailTextField from "./LoginEmailTextField";
 import LoginPasswordTextField from "./LoginPasswordTextField";
@@ -14,7 +13,7 @@ const Login = props => {
     password: ""
   });
 
-  const { onLogin, onSignUp, onRememberMe, errorText } = props;
+  const { onLogin, onSignUp, errorText } = props;
 
   return (
     <LoginContainer>
@@ -29,7 +28,6 @@ const Login = props => {
           setState({ ...state, password: newPassword });
         }}
       />
-      <RememberMe onChange={onRememberMe} />
       <LoginButton
         onClick={() => {
           onLogin(state);
@@ -44,8 +42,7 @@ const Login = props => {
 
 Login.propTypes = {
   onLogin: PropTypes.func.isRequired,
-  onSignUp: PropTypes.func.isRequired,
-  onRememberMe: PropTypes.func.isRequired
+  onSignUp: PropTypes.func.isRequired
 };
 
 export default Login;

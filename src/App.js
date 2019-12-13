@@ -8,7 +8,7 @@ function App() {
       <Login
         onLogin={() => {}}
         onSignUp={() => {}}
-        onRememberMe={rememberMe => console.log(rememberMe)}
+        onRememberMe={rememberMe => {}}
       />
     </div>
   );

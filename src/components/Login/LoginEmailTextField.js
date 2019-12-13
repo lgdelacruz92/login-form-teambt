@@ -4,10 +4,11 @@ import { validateEmail } from "@bit/lgdelacruz92.team-bt.validate-email";
 
 const LoginEmailTextField = props => {
   const [errorText, setErrorText] = React.useState("");
-  const { onChange } = props;
+  const { onChange, datatestid } = props;
   return (
     <TeamBtTextField
       label="Email"
+      datatestid={datatestid}
       onChange={e => {
         onChange(e.target.value);
         if (validateEmail(e.target.value)) {

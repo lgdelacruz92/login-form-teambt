@@ -4,7 +4,7 @@ import TeamBtTextField from "../TeamBtTextField";
 
 const MaskedTextField = props => {
   const [visible, setVisible] = React.useState(false);
-  const { label, onChange, errorText } = props;
+  const { label, onChange, errorText, datatestid } = props;
   return (
     <TeamBtTextField
       type={visible ? "text" : "password"}
@@ -18,6 +18,7 @@ const MaskedTextField = props => {
           />
         )
       }}
+      datatestid={datatestid}
       onChange={onChange}
     />
   );

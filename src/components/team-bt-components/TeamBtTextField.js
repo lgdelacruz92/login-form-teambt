@@ -10,7 +10,7 @@ const useStyles = MUI.makeStyles(theme => {
 });
 
 const TeamBtTextField = props => {
-  const { label, type, InputProps, onChange, errorText } = props;
+  const { label, type, InputProps, onChange, errorText, datatestid } = props;
   const classes = useStyles();
   return (
     <MUI.TextField
@@ -19,6 +19,9 @@ const TeamBtTextField = props => {
       error={errorText.length > 0}
       helperText={errorText}
       InputProps={InputProps}
+      inputProps={{
+        "data-testid": datatestid
+      }}
       variant="outlined"
       className={classes.teamBtTextField}
       fullWidth

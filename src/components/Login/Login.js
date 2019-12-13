@@ -18,9 +18,11 @@ const Login = props => {
   return (
     <LoginContainer>
       <LoginEmailTextField
+        datatestid={"email-input-field"}
         onChange={newEmail => setState({ ...state, email: newEmail })}
       />
       <LoginPasswordTextField
+        datatestid={"password-input-field"}
         onChange={newPassword => {
           setState({ ...state, password: newPassword });
         }}

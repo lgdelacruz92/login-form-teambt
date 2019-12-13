@@ -6,7 +6,7 @@ import TeamBtTextField from "../team-bt-components/TeamBtTextField";
 const Login = props => {
   return (
     <LoginContainer>
-      <TeamBtTextField />
+      <TeamBtTextField label="Email" />
       <MaskedTextField label="Password" />
     </LoginContainer>
   );

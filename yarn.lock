@@ -1001,6 +1001,11 @@
   resolved "https://node.bit.dev/lgdelacruz92.team-bt.validate-email/-/lgdelacruz92.team-bt.validate-email-0.1.1.tgz#1ec64538913837e4d23c40f008dacd3844b42600"
   integrity sha1-HsZFOJE4N+TSPEDwCNrNOES0JgA=
 
+"@bit/lgdelacruz92.team-bt.validate-password@^0.1.0":
+  version "0.1.0"
+  resolved "https://node.bit.dev/lgdelacruz92.team-bt.validate-password/-/lgdelacruz92.team-bt.validate-password-0.1.0.tgz#fd106f2d330cd5551d9bd61e629d4edecda1f6d8"
+  integrity sha1-/RBvLTMM1VUdm9YeYp1O3s2h9tg=
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.3.tgz#099139eaec7ebf07a27c1786a3ff64f39464d2ef"

@@ -8,8 +8,14 @@ import TeamBtButton from "../team-bt-components/TeamBtButton";
 const Login = props => {
   return (
     <LoginContainer>
-      <TeamBtTextField label="Email" />
-      <MaskedTextField label="Password" />
+      <TeamBtTextField
+        label="Email"
+        onChange={e => console.log(e.target.value)}
+      />
+      <MaskedTextField
+        label="Password"
+        onChange={e => console.log(e.target.value)}
+      />
       <RememberMe onChange={() => {}} />
       <TeamBtButton variant="contained">LOGIN</TeamBtButton>
       <TeamBtButton variant="outlined">SIGN UP</TeamBtButton>

@@ -18,7 +18,7 @@ const LoginButton = props => {
   }, [onClick]);
 
   return (
-    <TeamBtButton onClick={onClick} variant="contained">
+    <TeamBtButton color="primary" onClick={onClick} variant="contained">
       LOGIN
     </TeamBtButton>
   );

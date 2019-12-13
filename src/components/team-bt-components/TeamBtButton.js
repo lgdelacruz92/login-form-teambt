@@ -11,9 +11,14 @@ const useStyles = MUI.makeStyles(theme => {
 
 const TeamBtButton = props => {
   const classes = useStyles();
-  const { children, variant } = props;
+  const { children, variant, onClick } = props;
   return (
-    <MUI.Button fullWidth variant={variant} className={classes.teamBtButton}>
+    <MUI.Button
+      onClick={onClick}
+      fullWidth
+      variant={variant}
+      className={classes.teamBtButton}
+    >
       {children}
     </MUI.Button>
   );

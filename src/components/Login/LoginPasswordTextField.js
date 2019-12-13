@@ -4,10 +4,12 @@ import { validatePassword } from "@bit/lgdelacruz92.team-bt.validate-password";
 
 const LoginPasswordTextField = props => {
   const [errorText, setErrorText] = React.useState("");
+  const { onChange } = props;
   return (
     <MaskedTextField
       label="Password"
       onChange={e => {
+        onChange(e.target.value);
         if (validatePassword(e.target.value)) {
           setErrorText("");
         } else {

@@ -3,14 +3,20 @@ import * as MUI from "@material-ui/core";
 
 const useStyles = MUI.makeStyles(theme => {
   return {
-    loginView: {}
+    loginView: {
+      width: 350
+    }
   };
 });
 
 const LoginView = props => {
   const classes = useStyles();
   const { children } = props;
-  return <div className={classes.loginView}>{children}</div>;
+  return (
+    <MUI.Paper elevation={3} className={classes.loginView}>
+      {children}
+    </MUI.Paper>
+  );
 };
 
 export default LoginView;

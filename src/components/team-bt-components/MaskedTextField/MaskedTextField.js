@@ -4,9 +4,13 @@ import EyeAdornment from "./EyeAdornment";
 
 const MaskedTextField = props => {
   const [visible, setVisible] = React.useState(false);
+  const { label } = props;
   return (
     <MUI.TextField
       type={visible ? "text" : "password"}
+      variant="outlined"
+      label={label}
+      fullWidth
       InputProps={{
         endAdornment: (
           <EyeAdornment

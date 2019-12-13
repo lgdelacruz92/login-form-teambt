@@ -1,7 +1,7 @@
 import React from "react";
 import * as RTL from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import Login from "components/Login";
+import Login from "./Login";
 
 describe("Login Test", () => {
   test("render test", () => {

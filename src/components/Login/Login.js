@@ -6,6 +6,7 @@ import LoginEmailTextField from "./LoginEmailTextField";
 import LoginPasswordTextField from "./LoginPasswordTextField";
 import LoginButton from "./LoginButton";
 import PropTypes from "prop-types";
+import LoginErrorMessage from "./LoginErrorMessage";
 
 const Login = props => {
   const [state, setState] = React.useState({
@@ -13,10 +14,11 @@ const Login = props => {
     password: ""
   });
 
-  const { onLogin, onSignUp, onRememberMe } = props;
+  const { onLogin, onSignUp, onRememberMe, errorText } = props;
 
   return (
     <LoginContainer>
+      <LoginErrorMessage message={errorText} />
       <LoginEmailTextField
         datatestid={"email-input-field"}
         onChange={newEmail => setState({ ...state, email: newEmail })}

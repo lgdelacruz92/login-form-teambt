@@ -4,16 +4,16 @@ import RememberMe from "components/team-bt-components/RememberMe";
 import TeamBtButton from "../team-bt-components/TeamBtButton";
 import LoginEmailTextField from "./LoginEmailTextField";
 import LoginPasswordTextField from "./LoginPasswordTextField";
+import LoginButton from "./LoginButton";
 import PropTypes from "prop-types";
 
 const Login = props => {
   const [state, setState] = React.useState({
     email: "",
-    password: "",
-    rememberMe: false
+    password: ""
   });
 
-  const { onLogin, onSignUp } = props;
+  const { onLogin, onSignUp, onRememberMe } = props;
 
   return (
     <LoginContainer>
@@ -25,13 +25,12 @@ const Login = props => {
           setState({ ...state, password: newPassword });
         }}
       />
-      <RememberMe
-        rememberMe={state.rememberMe}
-        onChange={() => setState({ ...state, rememberMe: !state.rememberMe })}
+      <RememberMe onChange={onRememberMe} />
+      <LoginButton
+        onClick={() => {
+          onLogin(state);
+        }}
       />
-      <TeamBtButton onClick={() => onLogin(state)} variant="contained">
-        LOGIN
-      </TeamBtButton>
       <TeamBtButton onClick={onSignUp} variant="outlined">
         SIGN UP
       </TeamBtButton>

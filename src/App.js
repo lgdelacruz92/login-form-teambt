@@ -5,7 +5,11 @@ import Login from "components/Login";
 function App() {
   return (
     <div className="App">
-      <Login onLogin={() => {}} onSignUp={() => {}} />
+      <Login
+        onLogin={() => {}}
+        onSignUp={() => {}}
+        onRememberMe={rememberMe => console.log(rememberMe)}
+      />
     </div>
   );
 }

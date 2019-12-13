@@ -1,16 +1,14 @@
 import React from "react";
-import * as MUI from "@material-ui/core";
 import EyeAdornment from "./EyeAdornment";
+import TeamBtTextField from "../TeamBtTextField";
 
 const MaskedTextField = props => {
   const [visible, setVisible] = React.useState(false);
   const { label } = props;
   return (
-    <MUI.TextField
+    <TeamBtTextField
       type={visible ? "text" : "password"}
-      variant="outlined"
       label={label}
-      fullWidth
       InputProps={{
         endAdornment: (
           <EyeAdornment

@@ -1,8 +1,15 @@
 import React from "react";
-import LoginView from "./LoginView";
+import LoginContainer from "./LoginContainer";
+import MaskedTextField from "../team-bt-components/MaskedTextField";
+import TeamBtTextField from "../team-bt-components/TeamBtTextField";
 
 const Login = props => {
-  return <LoginView></LoginView>;
+  return (
+    <LoginContainer>
+      <TeamBtTextField />
+      <MaskedTextField label="Password" />
+    </LoginContainer>
+  );
 };
 
 export default Login;

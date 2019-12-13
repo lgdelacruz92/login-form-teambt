@@ -4,12 +4,13 @@ import * as MUI from "@material-ui/core";
 const useStyles = MUI.makeStyles(theme => {
   return {
     loginView: {
-      width: 350
+      width: 350,
+      padding: 20
     }
   };
 });
 
-const LoginView = props => {
+const LoginContainer = props => {
   const classes = useStyles();
   const { children } = props;
   return (
@@ -19,4 +20,4 @@ const LoginView = props => {
   );
 };
 
-export default LoginView;
+export default LoginContainer;

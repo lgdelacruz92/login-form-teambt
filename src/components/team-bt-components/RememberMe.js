@@ -11,11 +11,11 @@ const useStyles = MUI.makeStyles(theme => {
 });
 
 const RememberMe = props => {
-  const { onChange } = props;
+  const { onChange, rememberMe } = props;
   const classes = useStyles();
   return (
     <div className={classes.rememberMe}>
-      <MUI.Checkbox onChange={onChange} />
+      <MUI.Checkbox checked={rememberMe} onChange={onChange} />
       <MUI.Typography>Remember me</MUI.Typography>
     </div>
   );

@@ -4,11 +4,12 @@ import TeamBtTextField from "../TeamBtTextField";
 
 const MaskedTextField = props => {
   const [visible, setVisible] = React.useState(false);
-  const { label, onChange } = props;
+  const { label, onChange, errorText } = props;
   return (
     <TeamBtTextField
       type={visible ? "text" : "password"}
       label={label}
+      errorText={errorText}
       InputProps={{
         endAdornment: (
           <EyeAdornment
